@@ -6,7 +6,12 @@ const AlbumData = (props) => {
     return (
         <View style={styles.container}>
             <Text>{title.label}</Text>
-            <Button title="Details" />
+            <Button
+                title="Learn More"
+                onPress={() =>
+                    navigation.navigate('Profile', { name: 'Jane' })
+                }
+            />
         </View>
     )
 }
